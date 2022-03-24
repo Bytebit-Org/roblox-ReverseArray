@@ -1,4 +1,4 @@
-export function reverseArray<T>(array: ReadonlyArray<T>): Array<T> {
+export function reverseArray<T extends defined>(array: ReadonlyArray<T>): Array<T> {
 	const size = array.size();
 	const result = new Array<T>(size);
 	for (let i = 0; i < size; i++) {
