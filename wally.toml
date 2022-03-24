@@ -1,0 +1,9 @@
+[package]
+name = "bytebit/reverse-array"
+description = "A simple function that just reverses any array given to it."
+version = "0.0.1"
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
