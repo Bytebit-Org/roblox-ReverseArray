@@ -41,15 +41,22 @@ New versions of the asset are uploaded with every release. The asset can be adde
 Documentation can be found [here](https://github.com/Bytebit-Org/roblox-ReverseArray/tree/master/docs), is included in the TypeScript files directly, and was generated using [TypeDoc](https://typedoc.org/).
 
 ## Example
-A brief description of the example
+In this example, an array is created, each value printed, a reversed array created, and then each of its values are printed
 
 <details>
   <summary>roblox-ts example</summary>
 
   ```ts
-  import { PackageClass, packageFunction } from "@rbxts/package-name";
+  import { reverseArray } from "@rbxts/reverse-array";
 
-  export class PackageConsumer {
+  const forwardArray = [1, 2, 3, 4];
+  for (const value of forwardArray) {
+    print(value)
+  }
+
+  const backwardArray = reverseArray(forwardArray);
+  for (const value of backwardArray) {
+    print(value)
   }
   ```
 </details>
@@ -58,21 +65,16 @@ A brief description of the example
   <summary>Luau example</summary>
 
   ```lua
-  local PackageClass = require(path.to.modules["package-name"]).PackageClass
-  local packageFunction = require(path.to.modules["package-name"]).packageFunction
+  local reverseArray = require(path.to.modules["reverse-array"]).reverseArray
 
-  local PackageConsumer = {}
-  PackageConsumer.__index = PackageConsumer
-
-  function new()
-    local self = {}
-    setmetatable(self, PackageConsumer)
-
-    return self
+  local forwardArray = [1, 2, 3, 4]
+  for _, value in ipairs(forwardArray)
+    print(value)
   end
-  
-  return {
-    new = new
-  }
+
+  local backwardArray = reverseArray(forwardArray)
+  for _, value in ipairs(backwardArray)
+    print(value)
+  end
   ```
 </details>
