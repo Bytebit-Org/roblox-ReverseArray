@@ -1,1 +1,1 @@
-export * from "functions/ReverseArray";
+export * from "./functions/ReverseArray";

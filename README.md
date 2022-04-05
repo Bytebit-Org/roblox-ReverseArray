@@ -26,7 +26,7 @@ npm i @rbxts/reverse-array
 ### Wally
 [Wally](https://github.com/UpliftGames/wally/) users can install this package by adding the following line to their `Wally.toml` under `[dependencies]`:
 ```
-ReverseArray = "bytebit/reverse-array@1.0.0"
+ReverseArray = "bytebit/reverse-array@1.0.1"
 ```
 
 Then just run `wally install`.
