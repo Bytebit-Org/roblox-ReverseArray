@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/reverse-array",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple function that just reverses any array given to it.",
   "main": "out/init.lua",
   "scripts": {
